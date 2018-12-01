@@ -1,0 +1,7 @@
+-sname advent_of_code
+
+-setcookie advent_of_code_cookie
+
++K true
++A30
++sfwi 500

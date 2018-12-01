@@ -1,0 +1,9 @@
+.ct/
+.erlang.cookie
+.eunit/
+_build/
+apps/advent_of_code/doc/
+erl_crash.dump
+log/
+.edts
+*~

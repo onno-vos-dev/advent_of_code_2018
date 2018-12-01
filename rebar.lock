@@ -1,0 +1,4 @@
+[{<<"eper">>,
+  {git,"https://github.com/massemanet/eper.git",
+       {ref,"805a58728a3258e78de7ae732397ffc74c91423c"}},
+  0}].
