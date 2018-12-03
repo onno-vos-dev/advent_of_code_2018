@@ -4,11 +4,12 @@
         ]).
 
 time_avg(Fun, X) ->
-  lists:sum(
-    lists:map(fun(_) ->
-                  {Avg, _} = timer:tc(fun() -> Fun() end),
-                  Avg
-              end, lists:seq(1, X))) / X.
+  AvgTimeMicro = lists:sum(
+                   lists:map(fun(_) ->
+                                 {Avg, _} = timer:tc(fun() -> Fun() end),
+                                 Avg
+                             end, lists:seq(1, X))) / X,
+  io:format("=== Time: ~.5f ms ~n~n", [AvgTimeMicro / 1000]).
 
 %%%_* Emacs ====================================================================
 %%% Local Variables:
